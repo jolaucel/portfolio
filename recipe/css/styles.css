@@ -1,0 +1,187 @@
+/* the box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* utility stuff */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+/*background color of entire area around the container */
+
+html {
+    background-color:#ffa600;
+}
+
+/* Setting up the container, adding a background color, setting up font */
+
+.container {
+    width: 750px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius:40px;
+    padding: 40px;
+    background-color:#f5f5f5;
+    font-family: 'Georgia', serif;
+}
+
+/*styling for small text under the title */
+
+.subtitle {
+    font-size:larger;
+}
+
+.byline {
+    line-height:50%;
+    font-size:90%;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/*making images display correctly*/
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+    border: 1px black solid;
+    padding:15px;
+}
+
+figcaption {
+    font-size: smaller;
+    font-style: italic;
+    padding-top: 3px;
+    text-align: center;
+}
+
+.ingtext li {
+    padding-bottom:10px;
+}
+
+
+
+
+
+/*table styling*/
+
+table {
+    border:3px solid black;
+    border-collapse: collapse;
+    width:300px;
+}
+
+tr:nth-child(odd) {
+    background-color:lightgreen;
+}
+
+td, th {
+    padding:10px;
+}
+
+th {
+    text-align:left;
+}
+
+
+
+
+/* link states*/
+
+a:link{
+    color:blue;
+}
+
+a:visited, a:active{
+    color:purple;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+/*bottom text*/
+.copyright {
+    text-align:right;
+    font-size:12px;
+}
+
+/** Review Popup & Button **/
+
+.reviewButton {
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.formPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.formContainer {
+  max-width: 520px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.formContainer input[type=text] {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom:15px;
+  margin-top:5px;
+  border: none;
+  background: #f1f1f1;
+}
+
+.formContainer input[type=number] {
+  margin-bottom:5px;
+}
+
+
+.formContainer .btn {
+  background-color: rgb(55, 179, 24);
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.85;
+}
+
+.formContainer .cancel {
+  background-color: red;
+}
+
+
+.formContainer .btn:hover, .open-button:hover {
+  opacity: 1;
+}
