@@ -1,0 +1,224 @@
+
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START STYLES HERE */
+
+body {
+  background: #af522d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:blanchedalmond;
+}
+
+h1 {
+  font-family: 'Unlock', cursive;
+  text-align:center;
+  padding-top:60px;
+}
+
+nav {
+  background: 	blanchedalmond;
+  position:fixed;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+  top:0;
+  width:100%;
+  margin-bottom:20px;
+}
+
+nav  a {
+  padding: 16px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight:bold;
+  font-size: 20px;
+  color:black;
+}
+
+nav a:hover {
+  background-color: #ffa600;
+}
+
+.buffet th {
+  font-weight: normal;
+  text-align:right;
+  padding-right:5px;
+}
+
+
+.buffet {
+  margin: 0 auto;
+}
+
+.mcontainer {
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  max-width:1200px;
+  margin: 0 auto;
+}
+
+.menuitem {
+  text-align:center;
+  width:350px;
+  padding-right:20px;
+  padding-left:20px;
+  
+}
+
+.menuitem p {
+  margin-top:-8px;
+}
+
+.subtitle {
+  background:#924526;
+  padding:1px;
+  margin-top:30px;
+}
+
+.subtitle h2 {
+  margin-left:20px;
+}
+
+.price {
+  margin-left:20px;
+}
+
+.clist {
+  font-weight:bold;
+}
+
+.specials {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.combo {
+  width:400px;
+  text-align:center;
+  padding:10px;
+  margin-right:10px;
+  margin-left:10px;
+}
+
+.ccontainer {
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.contactinfo {
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.mapcontainer {
+  background:#924526;
+  padding:5px;
+}
+
+.subhead {
+  text-align:center;
+}
+
+#slideshow {
+  width:90%;
+  max-width:900px;
+  margin:0 auto;
+}
+
+h3 a {
+  color:blanchedalmond;
+}
+
+h3 a:hover{
+  color:rgb(248, 209, 151);
+}
+
+.cinfo {
+  text-align:center;
+}
+
+.main {
+  font-size:50px;
+}
+
+/* slideshow setup */
+[data-component="slideshow"] .slide {
+    display:none;
+  }
+
+[data-component="slideshow"] .slide.active {
+    display: block;
+  }
+
+.slide img {
+  max-width:100%;
+  border: 10px solid #803b20;
+  border-radius:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.slide {
+  margin:0 auto;
+}
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {
+
+} */
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) {
+
+} */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {
+
+} */
+
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) {
+
+} */
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */

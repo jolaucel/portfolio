@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Los Gringos</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--fonts import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    
+    <h1 class="main">Los Gringos</h1>
+
+    <h3 class="subhead"> Come and enjoy a fresh blend of Tex-Mex and authentic Mexican food. <a href="contact.html">Visit us today!</a></h3>
+        <!-- code for slideshow adapted from https://www.freecodecamp.org/news/how-to-create-a-slideshow/ -->
+        <div id="slideshow" data-component="slideshow">
+            <div class="slideparent" role="list">
+                <div class="slide">
+                    <img src="images/1.jpg" alt="Mexican Food">
+                </div>
+                <div class="slide">
+                    <img src="images/2.jpg" alt="Mexican Food">
+                </div>
+                <div class="slide">
+                    <img src="images/3.jpg" alt="Mexican Food">
+                </div>
+            </div>
+        </div>
+
+    <script>
+        // script for slideshow adapted from freecodecamp.org: https://www.freecodecamp.org/news/how-to-create-a-slideshow/
+         var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+
+            // Apply to all slideshows that you define with the markup wrote
+            slideshows.forEach(initSlideShow);
+
+            function initSlideShow(slideshow) {
+
+                var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+                var index = 0, time = 5000;
+                slides[index].classList.add('active');
+
+                setInterval(() => {
+                    slides[index].classList.remove('active');
+
+                    //Go over each slide incrementing the index
+                    index++;
+
+                    // If you go over all slides, restart the index to show the first slide and start again
+                    if (index === slides.length) index = 0;
+
+                    slides[index].classList.add('active');
+
+                }, time);
+            }
+
+
+    </script>
+
+        
+    </body>
+</html>
