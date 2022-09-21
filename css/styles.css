@@ -32,7 +32,7 @@ body {
   background: #195190FF;
   font-family: 'Montserrat', sans-serif;
   /*color:#A2A2A1FF; */
-  color:#C0C0C0;
+  color:black;
   font-size:24px;
 }
 
@@ -40,7 +40,7 @@ h1 {
 	font-family: 'Cormorant SC', serif;
     text-align:center;
 	font-size:68px;
-	color: #E5DACE;
+	color: #800020;
 	padding-top: 40px;
 }
 
@@ -51,18 +51,20 @@ h1 {
 	max-width:1000px;
 	margin: 0 auto;
 	margin-top:10px;
-	border: 5px solid #184679;
+	border: 15px solid #184679;
 	border-radius: 35px;
+	background: white;
 }
 
 .about {
 	display:flex;
 	justify-content: center;
 	flex-wrap:wrap;
-	max-width:50%;
+	max-width:450px;
 	margin: 0 auto;
 	float:left;
 	text-align:center;
+	margin-left:-70px;
 }
 
 
@@ -70,9 +72,9 @@ h1 {
 	padding-top:20px;
 	max-width:350px;
 	margin: 0 auto;
+	margin-left:85px;
 	
 }
-
 
 .scroller {
 	position:relative;
@@ -90,10 +92,41 @@ h1 {
 	animation: slide 12s infinite;
 	animation-delay:2s;
 	text-align:center;
-	color: #E5DACE;
+	color: #800020;
 	font-size:32px;
 	width:100%;
 }
+
+/* website previews */
+
+.left {
+	border: 5px solid #2567b2;
+	border-radius: 15px;
+	margin-bottom:10px;
+	margin-right:10px;
+	max-width:450px;
+}
+
+.left:hover {
+	border: 6px solid #184679;
+}
+
+.right:hover {
+	border: 6px solid #184679;
+}
+
+.right {
+	border: 5px solid #2567b2;
+	border-radius: 15px;
+	margin-left:10px;
+	margin-bottom:10px;
+	max-width:450px;
+}
+
+.previews {
+	max-width:100%;
+}
+
 
 @keyframes slide {
 	0% {
@@ -128,8 +161,8 @@ h1 {
 .resume {
 	margin-top:70px;
 	padding:8px;
-	font-size:20px;
-	color: #FCCD12;
+	font-size:24px;
+	color: #F8F0E3;
 	background-color: #2567b2;
 	border: 2px solid #184679;
 	font-weight:bold;
@@ -140,6 +173,14 @@ h1 {
 	background-color:#184679;
 	cursor:pointer;
 }
+
+/*settings for devices under 1000px */
+@media (max-width: 991.98px) {
+	.about {
+		display:in-line;
+		background:red;
+	}
+} 
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
 /* Extra small devices (portrait phones, less than 576px)
